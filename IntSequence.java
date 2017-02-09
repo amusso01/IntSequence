@@ -1,6 +1,7 @@
 
 /**
- * 
+ * Enter a sequence of whole number and output 
+ * the smallest, the largest, the range ,the sum and the average
  * 
  * @author Andrea Musso  
  * 
@@ -22,7 +23,6 @@ public class IntSequence
             boolean isInt = scan.hasNextLong();//call a Scanner method hasNextInt return true if a long has been entered            
             input=scan.nextDouble();
                 if(isInt){
-                    
                     if(counter==0&&input==0){
                         input=1;
                         System.out.println("You must enter at least one value");
@@ -43,7 +43,6 @@ public class IntSequence
                     }
                 }else{
                     System.out.println("The value entered is not a whole number.");
-                    input=1;
                 }
         }while(input!=0);
         range=largest-smallest;
